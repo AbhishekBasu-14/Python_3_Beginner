@@ -1,0 +1,34 @@
+#Beginner Topic 6-
+#Importing modules
+
+#ASSUME math() was NOT an inbuilt function.
+import math
+a=5
+b=6
+c= math.pow(a,b) #pow() is defined in the math() module which is an existing file.
+print("We have assumed math() as not to be an inbuilt function, so we imported it and used math.pow()")
+print("a raised to b using pow() is",c)
+print(" ")
+
+#Similarly other modules can be created and used by following the steps given in the above text cell.
+
+#Renaming a module
+#Lets rename module math() as m() and see the working.
+import math as m
+a=5
+b=6
+c= m.pow(a,b) #we use m.pow() directly.
+print("We have renamed module math () as m(). The result obtained remains same.")
+print("a raised to b using pow() is",c)
+print(" ")
+
+#dir() will show all the available functions in math() module
+import math
+x = dir(math)
+print("All available functions under math module are as follows ")
+print(x)
+print("")
+
+#Import from module
+#Example is shown in text cell above. We can't run it here as we have not saved the mymodule.py file
+
