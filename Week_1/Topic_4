@@ -1,0 +1,77 @@
+#Beginner Topic 4- Lists Operations and Strings manipulation.
+
+l = ["java","c","c++","python"] 
+print("List of coding languages is", l) 
+
+#Modifying list elements
+print("Before modifying, l[1] is", l[1])
+l[1]= "html" #changing the element at index [1]
+print("After modifying, l[1] is", l[1])
+print("Now the list elements are", l)
+
+#Removing an element from a list using listname.remove()
+l.remove("c++")
+print("After removing c++, now the list elements are", l)
+
+#There are various functions like remove() which helps in list modification
+#append()- Adds an element at the end of the list
+l.append("c++")
+print("Appended list is",l)
+#clear()- Removes all the elements from the list 
+#count()- Returns the number of elements with the specified value
+x=l.count("python")
+print("No. of times python appears in list l is:",x)
+#extend()- Add the elements of a list (or any iterable), to the end of the current list
+#index()- Returns the index of the first element with the specified value
+#insert()- Adds an element at the specified position
+l.insert(3,"rocket")
+print("After inserting rocket at [3], we have our list as",l)
+#pop()- Removes the element at the specified position
+l.pop(3)
+print("After removing rocket using pop(), we have",l)
+#reverse()- Reverses the order of the list
+#sort()- Sorts the list in alphabetical order 
+l.sort()
+print("The sorted list is",l)
+print("")
+#For sorting in descending order, sort() and remove() can be used simultaneously. 
+
+#List Slicing- This is explained under String slicing because the method and syntax of slicing remains same whether its a list or a string.
+#Slicing- this method is used to separate out a part of a list/string and then work on it.
+
+
+
+#Strings Manipulation
+#Indexing- Each element (alphabet, numbers, spaces) in a string holds an unique index number starting from [0] as the first element
+s = "Dogs are cute"
+print("Examples of string indexing :-")
+print(s[0]) #This will print D as D is the first element with index [0]
+print(s[4]) #Output shows nothing because it prints a <space> as index [4] lies between two words in string s.
+print(s[12]) #index of last letter
+#print(s[13]) will give an IndexError because the last letter 'e' in string s corresponds to index [12]
+
+#Negative Indexing- starts from the last letter of the string which is assigned an index of [-1]
+#This method can be used to separate out the last letter of a string for some operation as and when required.
+print("Example for negative indexing :-")
+print(s[-1]) #This will print 'e'
+
+#An element will therefore have two indexes i.e a positive and a negative index. Both the following indexes corresponds to the same element 'a'.
+print("Both negative and positive index of an element :-")
+print(s[-8]) 
+print(s[5])
+print("")
+
+#Slicing of a String (same applies for splicing of a list)
+#Syntax stringname[start:stop:step]
+#start- index from where to start
+#stop- index till where string has to be sliced. This index element is not included in splicing.
+#step- no. of elements to be skipped (optional) 
+x = "abcdefghij"
+print("Slicing from [2] to end-", x[2:])
+print("Slicing from start to index at [2]-", x[:3]) #beacause index [3] is not included.
+print("Slicing from [3] to [5]-", x[3:6]) #prints elements at [3], [4], [5].
+print("Slicing with a step of 2 elements-", x[: :2])
+print("Slicing from [2] to [6] with a step of 2-", x[2:7:2])
+print("")
+#REVERSING a string using splicing
+print("Reverse of string using splicing-", x[: :-1])
