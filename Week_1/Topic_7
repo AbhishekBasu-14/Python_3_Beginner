@@ -1,0 +1,14 @@
+#Beginner Topic 7-
+
+#Downloading package using pip
+#pip install camelcase
+print("When we run pip install camelcase, the output we get is-")
+print("Requirement already satisfied: camelcase in /usr/local/lib/python3.6/dist-packages (0.2)")
+print("This means camelcase was already installed in my system")
+
+
+#Uninstalling a package using pip
+#pip uninstall camelcase
+print("When we run pip uninstall camelcase, the output we get is-")
+print("Uninstalling camelcase-0.2: Would remove: /usr/local/lib/python3.6/dist-packages/camelcase-0.2.dist-info/* /usr/local/lib/python3.6/dist-packages/camelcase/* Proceed (y/n)? y Successfully uninstalled camelcase-0.2")
+print("This means camelcase was uninstalled in my system")
