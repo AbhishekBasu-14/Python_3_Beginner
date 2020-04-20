@@ -1,0 +1,92 @@
+#Beginner Topic 3- Lists, Sets, Tuples, Dictionaries.
+
+#Lists- collection of data which can be modified. Square brackets are used while defining lists. We can have duplicate elements.
+l = ["java","c","c++","python"] #List of coding languages
+print("List of coding languages is", l) #lists can be easily printed
+
+#List Indexing- Each element of a list have an unique index assigned to it so that each element can be easily accessed.
+print("The first element will have index 0 like this- l[0]", l[0])
+#The first element always have the index [0]
+
+#Negative Indexing- starts from the last element of the list which is assigned an index of [-1]
+print("In negative indexing, the last element has an index of [-1]", l[-1])
+print("")
+
+#Other operations of lists are explained in the next cell.
+
+#Sets- A Set is an unordered collection of data type that mutable and has no duplicate elements.
+#We use curly brackets for defining a set.
+s = {"bike","car", "helicopter", "train", "aircraft"} #Set of means of transports.
+print("Set of means of transport is as follows-",s)
+
+#Indexing- Since sets are unordered data, there are no fixed index assigned to each element.
+#print(s[0]) will give a TypeError because indexing cannot be done in sets.
+
+#Adding element using add()
+s.add("ship")
+print("Set after adding ship using add() is-",s)
+#Adding multiple items using update()
+s.update(["boat","cycle","atv"]) #Square brackets are NECESSARY otherwise each word will be splitted into letters and updated in the set.
+print("Set after adding multiple items using update() is-",s)
+
+#Removing item from sets
+#using remove()
+s.remove("atv")
+print("Set after removing atv is-",s)
+#Alternatively, discard() can also be used.
+
+#Joining 2 sets
+s1 = {"1","2","3"}
+s2 = {"4", "5", "6"}
+s3= s1.union(s2) #Does not guarantee that the order of elements will remain same.
+print("Set 3 after joining set 1 and set 2 is-",s3)
+print("")
+
+#Other such modifications can be done for set using various inbuilt function as given in the documentation above. 
+#Many such functions are explained for lists in the next code cell. 
+#Many of them are applicable for sets too. 
+
+#Tuples- A tuple is a collection which is ordered and immutable. In Python tuples are written with round brackets.
+t = ("maths","physics","biology") #Tuple of few subjects
+print("Tuple of 3 subjects is defined as-",t) #Tuples can be directly printed.
+
+#Indexing- Tuple elements are assigned a unique index with the first element as [0].
+print("Tuple with index [0] is", t[0])
+#Negative indexing is also applicable with the last element as an index of [-1].
+print("The second last element in our tuple using negative index of [-2] is-", t[-2])
+
+#Range of indexes/ Splicing of tuples
+#Splicing of tuple can also be done using the same syntax as used for strings and lists.
+print("Spliced tuple from index [1] to end is-", t[1:]) #index [0] has been removed when spliced from [1]. 
+print("")
+
+#Modifying tuple elements
+#Step 1: change tuple into lists because tuples are immutable.
+#Step 2: modify the element.
+#Step 3: change the list back to a tuple
+print("Modifying tuple element is a 3 step process:")
+l = list(t)
+print("Tuple converted to list is-", l)
+l[2]= "chemistry"
+print("Changing element at [2] from biology to chemistry-", l)
+t= tuple(l)
+print("Converting list back to tuple, we get modified tuple as-", t)
+print("")
+
+#Dictionary- A dictionary is a collection of data which is unordered, mutable and indexed. 
+#In Python dictionaries are written with curly brackets, and they have keys and values.
+d = {"name":"abc", "roll":"1"} #name and roll are the keys, abc and 1 are the values.
+print("Dictinary we defined is-",d) #can be directly printed.
+
+#Accessing a key in dictionary
+x = d["roll"]
+print("Accessing dictionary element under key as roll is-",x)
+#Alternatively, we can use get() for the same purpose like this- x= d.get("roll")
+
+#Modifying dictionary element
+d["roll"]= 2
+print("Dictionary with roll modified is-",d) 
+
+#Various other functions can be performed as done in lists, sets and tuples. 
+#A list of functions are given in the text cell above.
+
