@@ -1,0 +1,33 @@
+#Beginner Topic 2- Operations and Built-in function.
+
+#Math() is the simplest and most frequently used operation. This is used for evaluation of mathematical expressions.
+print("The sum of 7 and 6 is",7+6)
+print("The difference between 5 and 3 is", 5-3)
+#Variables can be used for solving equations as per BODMAS rule.
+a = (5*7)+(25/5)
+print("The value of a is",a)
+
+#Exponential as 'a' raised to 'b' can be solved in 2 ways:
+print("Value of 3 raised to 2 using pow() is", pow(3,2))
+print("Value of 3 raised to 2 using ** is", 3**2)
+
+#Alternatively, we can simply write 'import math' module in the beginning of the code and then use math.<operation> in order to access various inbuilt functions.
+import math #This is NOT NECESSARY since math is always available.
+a=5
+b=7.8
+print("The factorial of a is", math.factorial(a)) #same as print("The factorial of a is",factorial(a)) without importing math.
+print("The floored value of b is", math.floor(b))
+print("")
+
+#Typecasting - used to change data types. 
+#type() returns the data type of the parameter passed.
+print("Examples of typecasting :-")
+f=7.5
+print("Data type of f is",type(f))
+i = int(f) #converting float to integer
+print("Data type of i is",type(i))
+print("")
+
+#help() - The python help function is used to display the documentation of modules, functions, classes, keywords etc. 
+#If the help function is passed without an argument, then the interactive help utility starts up on the console.
+help(max) #This will explain what max() does in a python program.
