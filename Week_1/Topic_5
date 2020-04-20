@@ -1,0 +1,52 @@
+#Beginner Topic 5-
+#Defining functions
+
+def f1(name): #A simple function f1 which takes a single input parameter
+  print("Hello",name) #Task assigned to the perform.
+print("Function f1 is called by passing a parameter as shown below")
+f1("Abhishek") #Calling the function by passing a parameter. We get the function f1 executed at the output.
+
+#Various types of arguments can be passed to a function apart from the one we saw above.
+
+#Arbitrary arguments- Number of parameters are not known so we use * and allow a tuple of parameters to be made available as input.
+def f2(*a):
+  print("The second argument entered is", a[1])
+print("Passing a tuple as an argument to an arbitrary function")
+f2("france","germany","spain","italy")
+
+#Keyword arguments- sending arguments as key=value type syntax.
+def my_function(c1, c2, c3):
+  print("The youngest child is", c3)
+print("Passing arguments to a function with keyword argument")
+
+my_function(c1 = "abc", c2 = "def", c3 = "ghi")
+
+#Arbitrary keyword argument- combination of above two forms
+def my_function(**b):
+  print("The first name is " + b["fname"])
+  print("The last name is " + b["lname"])
+print("Example of arbitrary keyword argument")
+my_function(fname = "abc", lname = "def")
+
+#Recursive function-
+#In this example, tri_recursion() is a function that we have defined to call itself ("recurse"). 
+#We use the k variable as the data, which decrements (-1) every time we recurse. 
+#The recursion ends when the condition is not greater than 0 (i.e. when it is 0).
+##Example credits: www.w3schools.com
+def tri_recursion(k): 
+  if(k > 0):
+    result = k + tri_recursion(k - 1)
+    print(result)
+  else:
+    result = 0
+  return result
+
+print("\n\nRecursion Example Results")
+tri_recursion(6)
+print(" ")
+
+#Lambda function
+x = lambda a, b : a * b #means lambda func that multiplies two arguments a and b.
+print("Result of the lambda expression is as follows")
+print(x(5, 6))
+print(" ")
