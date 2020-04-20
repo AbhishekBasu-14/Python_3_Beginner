@@ -1,0 +1,41 @@
+#Beginner Topic 1 - Python Print function, String and Variables.
+
+a=10
+b=20
+c=16
+#Various parameters can be passed in print() as shown the commands below.
+print("Examples of mathematical operations :-")
+print(a+b+70) #mathematical operations can be performed.
+print(a+0.7) #integer and float number can be directly added.
+print(c/a) #this gives the floated value after division.
+print(c//a) #this gives the floored int value after division.
+print(2**3) #power ** function a**b means a to the power b.
+print(b%a) #b%a modulus % function gives the remainder when b is divided by a.
+print(b%3) #another example of modulus.
+print("")
+
+#Solving complex equations
+print("Mathematical equations can be solved in 2 ways: 1. using a variable 2. direct method (not preferred)")
+c=(a+(b**2))/20
+#here, we are printing a variable, so TYPECASTING has to be done to convert data type of c from int(or float) to str().
+print("Using method 1, the answer is "+str(c)) #using + does not add a space automatically before the answer.
+
+#The same expression can be directly evaluated under print()
+print("Using method 2, the answer is",(a+(b**2))/20) #using a comma will automatically add a <space> before the evaluated answer.
+print("")
+
+#for printing a string multiple times, we can use the * command
+s="Yo"
+print("Yo"*7) #This will print Yo 7 times.
+print("")
+
+#use of input()
+#This is used to TAKE USER INPUT.
+#While running the code, this part will ask for user input for further execution.
+n=input("Whats your name ? ") #by default, string is the data type when we use input() 
+a=int(input("Whats your age ? ")) #here, input() has been typecasted to int since age has to be a integer. 
+h=float(input("Whats your height ? ")) #same has been done for height. If invalid input is given, we get a ValueError
+print("Name is "+n)
+print("Age is "+str(a)+" years old")
+print("Height is "+str(h))
+
