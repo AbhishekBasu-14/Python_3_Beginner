@@ -15,3 +15,5 @@ The first method asks the user for creating the list on which search algorithm w
 The second method generates a random list using imported modules and implements the search algorithm.
 
 Linear search has been executed only by the second method. The first methods can also be implemented by making minor required changes to the code.
+
+The time interval of each algorithm is also calculated in the code. Run the codes and the time will also be printed in the results.
