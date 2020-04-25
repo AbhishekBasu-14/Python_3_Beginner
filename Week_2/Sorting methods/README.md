@@ -22,3 +22,5 @@ The main part of the code and working remains totally same in both the above met
 The first method asks the user for creating the list on which sort algorithms will work.
 
 The second method generates a random list using imported modules and implements the sort algorithm.
+
+The time interval of each algorithm is also calculated in the code. Run the codes and the time will also be printed in the results. 
